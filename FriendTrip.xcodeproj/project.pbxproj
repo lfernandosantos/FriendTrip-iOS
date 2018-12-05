@@ -1,0 +1,571 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		75760AC7FBD98455310639CF /* Pods_FriendTrip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48C6309D647789E66B2DB949 /* Pods_FriendTrip.framework */; };
+		BE1A13E821B602B80005A0FD /* UserEntity+CoreDataProperties copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1A13E621B602B80005A0FD /* UserEntity+CoreDataProperties copy.swift */; };
+		BE1A13E921B602B80005A0FD /* UserEntity+CoreDataClass copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1A13E721B602B80005A0FD /* UserEntity+CoreDataClass copy.swift */; };
+		BE1A13EC21B603BC0005A0FD /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1A13EB21B603BC0005A0FD /* PersistenceManager.swift */; };
+		BE1A13EF21B614F10005A0FD /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1A13EE21B614F10005A0FD /* UserDefaultManager.swift */; };
+		BE5C847821A79DD6001610DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5C847721A79DD6001610DC /* AppDelegate.swift */; };
+		BE5C847A21A79DD6001610DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5C847921A79DD6001610DC /* ViewController.swift */; };
+		BE5C847D21A79DD6001610DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE5C847B21A79DD6001610DC /* Main.storyboard */; };
+		BE5C848021A79DD6001610DC /* FriendTrip.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE5C847E21A79DD6001610DC /* FriendTrip.xcdatamodeld */; };
+		BE5C848221A79DD8001610DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE5C848121A79DD8001610DC /* Assets.xcassets */; };
+		BE5C848521A79DD8001610DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE5C848321A79DD8001610DC /* LaunchScreen.storyboard */; };
+		BE5C848F21A79F4C001610DC /* RequestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5C848E21A79F4C001610DC /* RequestData.swift */; };
+		BE5C849121A79F5A001610DC /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5C849021A79F5A001610DC /* BaseService.swift */; };
+		BE5C849321A79F6D001610DC /* FriendTripAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5C849221A79F6D001610DC /* FriendTripAPI.swift */; };
+		BE5C849521A79F8C001610DC /* RequestResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5C849421A79F8C001610DC /* RequestResult.swift */; };
+		BE5C849821A7A286001610DC /* RegisterUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5C849721A7A286001610DC /* RegisterUserService.swift */; };
+		BE5C849B21AA04D5001610DC /* TripService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5C849A21AA04D5001610DC /* TripService.swift */; };
+		BE5C849E21AA0593001610DC /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5C849D21AA0593001610DC /* Trip.swift */; };
+		BECEF1A321B49F4800319B5F /* FBLoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECEF1A221B49F4800319B5F /* FBLoginService.swift */; };
+		BECEF1A621B4A9C700319B5F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECEF1A521B4A9C700319B5F /* LoginViewController.swift */; };
+		BECEF1A921B4B16C00319B5F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECEF1A821B4B16C00319B5F /* LoginViewModel.swift */; };
+		BECEF1AB21B4B89A00319B5F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECEF1AA21B4B89A00319B5F /* User.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		48C6309D647789E66B2DB949 /* Pods_FriendTrip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FriendTrip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D06AB18EFD51049516C139E /* Pods-FriendTrip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FriendTrip.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FriendTrip/Pods-FriendTrip.debug.xcconfig"; sourceTree = "<group>"; };
+		BE1A13E621B602B80005A0FD /* UserEntity+CoreDataProperties copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserEntity+CoreDataProperties copy.swift"; sourceTree = "<group>"; };
+		BE1A13E721B602B80005A0FD /* UserEntity+CoreDataClass copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserEntity+CoreDataClass copy.swift"; sourceTree = "<group>"; };
+		BE1A13EB21B603BC0005A0FD /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		BE1A13EE21B614F10005A0FD /* UserDefaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultManager.swift; sourceTree = "<group>"; };
+		BE5C847421A79DD6001610DC /* FriendTrip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FriendTrip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE5C847721A79DD6001610DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BE5C847921A79DD6001610DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BE5C847C21A79DD6001610DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BE5C847F21A79DD6001610DC /* FriendTrip.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FriendTrip.xcdatamodel; sourceTree = "<group>"; };
+		BE5C848121A79DD8001610DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE5C848421A79DD8001610DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BE5C848621A79DD8001610DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE5C848E21A79F4C001610DC /* RequestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestData.swift; sourceTree = "<group>"; };
+		BE5C849021A79F5A001610DC /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		BE5C849221A79F6D001610DC /* FriendTripAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTripAPI.swift; sourceTree = "<group>"; };
+		BE5C849421A79F8C001610DC /* RequestResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestResult.swift; sourceTree = "<group>"; };
+		BE5C849721A7A286001610DC /* RegisterUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserService.swift; sourceTree = "<group>"; };
+		BE5C849A21AA04D5001610DC /* TripService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripService.swift; sourceTree = "<group>"; };
+		BE5C849D21AA0593001610DC /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		BECEF1A221B49F4800319B5F /* FBLoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBLoginService.swift; sourceTree = "<group>"; };
+		BECEF1A521B4A9C700319B5F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BECEF1A821B4B16C00319B5F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		BECEF1AA21B4B89A00319B5F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C6E3CB57FE8E65FDA3BB29A4 /* Pods-FriendTrip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FriendTrip.release.xcconfig"; path = "Pods/Target Support Files/Pods-FriendTrip/Pods-FriendTrip.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE5C847121A79DD6001610DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75760AC7FBD98455310639CF /* Pods_FriendTrip.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		283460F1AC506E5BAFBE8B38 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D06AB18EFD51049516C139E /* Pods-FriendTrip.debug.xcconfig */,
+				C6E3CB57FE8E65FDA3BB29A4 /* Pods-FriendTrip.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BE1A13E521B6027A0005A0FD /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				BE1A13E721B602B80005A0FD /* UserEntity+CoreDataClass copy.swift */,
+				BE1A13E621B602B80005A0FD /* UserEntity+CoreDataProperties copy.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		BE1A13EA21B6037F0005A0FD /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				BE1A13E521B6027A0005A0FD /* Entities */,
+				BE1A13EB21B603BC0005A0FD /* PersistenceManager.swift */,
+				BE1A13EE21B614F10005A0FD /* UserDefaultManager.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		BE1A13ED21B610480005A0FD /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				BECEF1A721B4B12900319B5F /* ViewModel */,
+				BECEF1A521B4A9C700319B5F /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		BE5C846B21A79DD6001610DC = {
+			isa = PBXGroup;
+			children = (
+				BE5C847621A79DD6001610DC /* FriendTrip */,
+				BE5C847521A79DD6001610DC /* Products */,
+				283460F1AC506E5BAFBE8B38 /* Pods */,
+				E9120468542C3349318301A8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BE5C847521A79DD6001610DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE5C847421A79DD6001610DC /* FriendTrip.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE5C847621A79DD6001610DC /* FriendTrip */ = {
+			isa = PBXGroup;
+			children = (
+				BE1A13ED21B610480005A0FD /* Login */,
+				BE5C849C21AA056D001610DC /* Model */,
+				BE5C848C21A79ED5001610DC /* Service */,
+				BE5C847721A79DD6001610DC /* AppDelegate.swift */,
+				BE5C847921A79DD6001610DC /* ViewController.swift */,
+				BE5C847B21A79DD6001610DC /* Main.storyboard */,
+				BE5C848121A79DD8001610DC /* Assets.xcassets */,
+				BE5C848321A79DD8001610DC /* LaunchScreen.storyboard */,
+				BE5C848621A79DD8001610DC /* Info.plist */,
+				BE5C847E21A79DD6001610DC /* FriendTrip.xcdatamodeld */,
+			);
+			path = FriendTrip;
+			sourceTree = "<group>";
+		};
+		BE5C848C21A79ED5001610DC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BE1A13EA21B6037F0005A0FD /* Database */,
+				BECEF1A121B49F1D00319B5F /* FacebookService */,
+				BE5C849921AA04BC001610DC /* TripService */,
+				BE5C849621A7A263001610DC /* UserService */,
+				BE5C848D21A79F33001610DC /* Utils */,
+				BE5C849021A79F5A001610DC /* BaseService.swift */,
+				BE5C849221A79F6D001610DC /* FriendTripAPI.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		BE5C848D21A79F33001610DC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BE5C848E21A79F4C001610DC /* RequestData.swift */,
+				BE5C849421A79F8C001610DC /* RequestResult.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		BE5C849621A7A263001610DC /* UserService */ = {
+			isa = PBXGroup;
+			children = (
+				BE5C849721A7A286001610DC /* RegisterUserService.swift */,
+			);
+			path = UserService;
+			sourceTree = "<group>";
+		};
+		BE5C849921AA04BC001610DC /* TripService */ = {
+			isa = PBXGroup;
+			children = (
+				BE5C849A21AA04D5001610DC /* TripService.swift */,
+			);
+			path = TripService;
+			sourceTree = "<group>";
+		};
+		BE5C849C21AA056D001610DC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BE5C849D21AA0593001610DC /* Trip.swift */,
+				BECEF1AA21B4B89A00319B5F /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BECEF1A121B49F1D00319B5F /* FacebookService */ = {
+			isa = PBXGroup;
+			children = (
+				BECEF1A221B49F4800319B5F /* FBLoginService.swift */,
+			);
+			path = FacebookService;
+			sourceTree = "<group>";
+		};
+		BECEF1A721B4B12900319B5F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BECEF1A821B4B16C00319B5F /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E9120468542C3349318301A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48C6309D647789E66B2DB949 /* Pods_FriendTrip.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE5C847321A79DD6001610DC /* FriendTrip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE5C848921A79DD8001610DC /* Build configuration list for PBXNativeTarget "FriendTrip" */;
+			buildPhases = (
+				C659BF580E59E89B2A79F094 /* [CP] Check Pods Manifest.lock */,
+				BE5C847021A79DD6001610DC /* Sources */,
+				BE5C847121A79DD6001610DC /* Frameworks */,
+				BE5C847221A79DD6001610DC /* Resources */,
+				E0C0BE148D3C045CB86840C6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FriendTrip;
+			productName = FriendTrip;
+			productReference = BE5C847421A79DD6001610DC /* FriendTrip.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE5C846C21A79DD6001610DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = LFSantos;
+				TargetAttributes = {
+					BE5C847321A79DD6001610DC = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = BE5C846F21A79DD6001610DC /* Build configuration list for PBXProject "FriendTrip" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE5C846B21A79DD6001610DC;
+			productRefGroup = BE5C847521A79DD6001610DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE5C847321A79DD6001610DC /* FriendTrip */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE5C847221A79DD6001610DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE5C848521A79DD8001610DC /* LaunchScreen.storyboard in Resources */,
+				BE5C848221A79DD8001610DC /* Assets.xcassets in Resources */,
+				BE5C847D21A79DD6001610DC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C659BF580E59E89B2A79F094 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FriendTrip-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0C0BE148D3C045CB86840C6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FriendTrip/Pods-FriendTrip-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FriendTrip/Pods-FriendTrip-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE5C847021A79DD6001610DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BECEF1A621B4A9C700319B5F /* LoginViewController.swift in Sources */,
+				BE1A13E921B602B80005A0FD /* UserEntity+CoreDataClass copy.swift in Sources */,
+				BE5C849E21AA0593001610DC /* Trip.swift in Sources */,
+				BE5C847A21A79DD6001610DC /* ViewController.swift in Sources */,
+				BE5C849821A7A286001610DC /* RegisterUserService.swift in Sources */,
+				BE5C847821A79DD6001610DC /* AppDelegate.swift in Sources */,
+				BE1A13EF21B614F10005A0FD /* UserDefaultManager.swift in Sources */,
+				BE5C849521A79F8C001610DC /* RequestResult.swift in Sources */,
+				BECEF1AB21B4B89A00319B5F /* User.swift in Sources */,
+				BE5C848021A79DD6001610DC /* FriendTrip.xcdatamodeld in Sources */,
+				BECEF1A321B49F4800319B5F /* FBLoginService.swift in Sources */,
+				BECEF1A921B4B16C00319B5F /* LoginViewModel.swift in Sources */,
+				BE5C849B21AA04D5001610DC /* TripService.swift in Sources */,
+				BE5C849321A79F6D001610DC /* FriendTripAPI.swift in Sources */,
+				BE1A13EC21B603BC0005A0FD /* PersistenceManager.swift in Sources */,
+				BE1A13E821B602B80005A0FD /* UserEntity+CoreDataProperties copy.swift in Sources */,
+				BE5C849121A79F5A001610DC /* BaseService.swift in Sources */,
+				BE5C848F21A79F4C001610DC /* RequestData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BE5C847B21A79DD6001610DC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE5C847C21A79DD6001610DC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BE5C848321A79DD8001610DC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE5C848421A79DD8001610DC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE5C848721A79DD8001610DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BE5C848821A79DD8001610DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE5C848A21A79DD8001610DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D06AB18EFD51049516C139E /* Pods-FriendTrip.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JQ52M4QL3U;
+				INFOPLIST_FILE = FriendTrip/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.lf.FriendTrip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE5C848B21A79DD8001610DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6E3CB57FE8E65FDA3BB29A4 /* Pods-FriendTrip.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JQ52M4QL3U;
+				INFOPLIST_FILE = FriendTrip/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.lf.FriendTrip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE5C846F21A79DD6001610DC /* Build configuration list for PBXProject "FriendTrip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE5C848721A79DD8001610DC /* Debug */,
+				BE5C848821A79DD8001610DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE5C848921A79DD8001610DC /* Build configuration list for PBXNativeTarget "FriendTrip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE5C848A21A79DD8001610DC /* Debug */,
+				BE5C848B21A79DD8001610DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BE5C847E21A79DD6001610DC /* FriendTrip.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BE5C847F21A79DD6001610DC /* FriendTrip.xcdatamodel */,
+			);
+			currentVersion = BE5C847F21A79DD6001610DC /* FriendTrip.xcdatamodel */;
+			path = FriendTrip.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BE5C846C21A79DD6001610DC /* Project object */;
+}
