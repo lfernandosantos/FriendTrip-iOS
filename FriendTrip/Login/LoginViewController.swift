@@ -19,7 +19,6 @@ class LoginViewController: UIViewController {
         setUp()
 
         loginVM.makeLogin(facebookID: "faceid") {
-
             print(self.loginVM.getUser())
         }
 

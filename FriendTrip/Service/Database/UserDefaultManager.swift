@@ -16,10 +16,11 @@ class UserDefaultManager {
 
     internal func loadUserDefault(for key: String, completion: @escaping (RequestResult<Any?, String>) -> Void) {
         if let object = defaultManager.object(forKey: key) as? Data {
-            let obj = NSKeyedUnarchiver.unarchiveObject(with: object)
-            completion(NetloloSDKResult.success(obj))
+            let obj = try? NSKeyedUnarchiver.unarchivedObject(ofClass: NSDictionary.self, from: object)
+                //.unarchiveObject(with: object)
+            completion(RequestResult.success(obj))
         } else {
-            completion(NetloloSDKResult.failure("error to load user defaults."))
+            completion(RequestResult.failure("error to load user defaults."))
             print("error to load user defaults.")
         }
     }

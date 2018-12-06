@@ -12,6 +12,7 @@
 		BE1A13E921B602B80005A0FD /* UserEntity+CoreDataClass copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1A13E721B602B80005A0FD /* UserEntity+CoreDataClass copy.swift */; };
 		BE1A13EC21B603BC0005A0FD /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1A13EB21B603BC0005A0FD /* PersistenceManager.swift */; };
 		BE1A13EF21B614F10005A0FD /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1A13EE21B614F10005A0FD /* UserDefaultManager.swift */; };
+		BE57509321B8AEEE0070A3A8 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57509221B8AEEE0070A3A8 /* KeychainService.swift */; };
 		BE5C847821A79DD6001610DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5C847721A79DD6001610DC /* AppDelegate.swift */; };
 		BE5C847A21A79DD6001610DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5C847921A79DD6001610DC /* ViewController.swift */; };
 		BE5C847D21A79DD6001610DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE5C847B21A79DD6001610DC /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 		BE1A13E721B602B80005A0FD /* UserEntity+CoreDataClass copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserEntity+CoreDataClass copy.swift"; sourceTree = "<group>"; };
 		BE1A13EB21B603BC0005A0FD /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 		BE1A13EE21B614F10005A0FD /* UserDefaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultManager.swift; sourceTree = "<group>"; };
+		BE57509221B8AEEE0070A3A8 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
 		BE5C847421A79DD6001610DC /* FriendTrip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FriendTrip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE5C847721A79DD6001610DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE5C847921A79DD6001610DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				BE5C848D21A79F33001610DC /* Utils */,
 				BE5C849021A79F5A001610DC /* BaseService.swift */,
 				BE5C849221A79F6D001610DC /* FriendTripAPI.swift */,
+				BE57509221B8AEEE0070A3A8 /* KeychainService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 				BECEF1A921B4B16C00319B5F /* LoginViewModel.swift in Sources */,
 				BE5C849B21AA04D5001610DC /* TripService.swift in Sources */,
 				BE5C849321A79F6D001610DC /* FriendTripAPI.swift in Sources */,
+				BE57509321B8AEEE0070A3A8 /* KeychainService.swift in Sources */,
 				BE1A13EC21B603BC0005A0FD /* PersistenceManager.swift in Sources */,
 				BE1A13E821B602B80005A0FD /* UserEntity+CoreDataProperties copy.swift in Sources */,
 				BE5C849121A79F5A001610DC /* BaseService.swift in Sources */,
