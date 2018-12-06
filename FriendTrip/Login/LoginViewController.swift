@@ -19,7 +19,7 @@ class LoginViewController: UIViewController {
         setUp()
 
         loginVM.makeLogin(facebookID: "faceid") {
-            print(self.loginVM.getUser())
+           // print(self.loginVM.getUser())
         }
 
     }
@@ -56,12 +56,14 @@ extension LoginViewController : FBSDKLoginButtonDelegate {
             print("is cancelled")
 
         } else {
+
+            //loginVM.makeLogin(facebookID: , completionHandler: <#T##() -> Void#>)
             print(result.grantedPermissions.description)
             print(loginButton.readPermissions.description)
         }
     }
 
     func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
-        print("logout")
+        loginVM.logoutUser()
     }
 }

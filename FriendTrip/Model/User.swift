@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct User {
+class User: NSObject {
     let facebookID: String
     let name: String
     let imagePath: String?

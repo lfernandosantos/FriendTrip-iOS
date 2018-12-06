@@ -33,6 +33,10 @@ class UserDefaultManager {
         return nil
     }
 
+    internal func deleteToUserDefault(key: String) {
+        self.defaultManager.removeObject(forKey: key)
+    }
+
     internal func saveUserDefault(_ obj: Any?, for key: String) {
         if obj != nil {
             let dataObj = NSKeyedArchiver.archivedData(withRootObject: obj!)

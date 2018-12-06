@@ -34,9 +34,7 @@ class LoginVM {
     func makeLogin(facebookID: String, completionHandler: @escaping () -> Void) {
 
         RegisterUserService().registerUser(facebookID: facebookID,
-                                           name: "fernando")
-        { result in
-            
+                                           name: "fernando") { result in
             switch result {
             case .success(let json):
                 completionHandler()
@@ -46,8 +44,16 @@ class LoginVM {
         }
     }
 
-    func getUser() -> User? {
-        return user
+    func saveUser(user: User) {
+        UserDefaultManager.shared.saveUserDefault(user, for: "user")
+    }
+
+//    func getUser() -> User? {
+//        return UserDefaultManager.shared.loadFromUserDefault(key: "user")
+//    }
+
+    func logoutUser() {
+        UserDefaultManager.shared.deleteToUserDefault(key: "user")
     }
 
 }
