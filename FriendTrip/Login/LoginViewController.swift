@@ -18,22 +18,37 @@ class LoginViewController: UIViewController {
 
         setUp()
 
-        loginVM.makeLogin(facebookID: "faceid") {
+        getFBUserData(view: self)
+
+        //loginVM.makeLogin(facebookID: "faceid") {
            // print(self.loginVM.getUser())
-        }
+        //}
 
     }
 
     func setUp() {
-        if FBSDKAccessToken.current() != nil {
-            print("logged in")
-        } else {
-            print("not logged")
-        }
-
-        addFBLoginButton()
+//        if FBSDKAccessToken.current() != nil {
+//            print("logged in")
+//        } else {
+//            print("not logged")
+//        }
+//
+//        addFBLoginButton()
     }
 
+    func getFBUserData(view: UIViewController){
+
+        print("init")
+        LoginFBRequest().requestFBLogin(view: view) { result in
+            switch result {
+            case .failure(let error):
+                    print("error: \(error)")
+            case .success(let json):
+                print("sucesso: \(json)")
+            }
+        }
+    }
+    
     func addFBLoginButton(){
         let btnFace = FBSDKLoginButton()
         btnFace.readPermissions = [FacebookLoginParams.PROFILE.rawValue,

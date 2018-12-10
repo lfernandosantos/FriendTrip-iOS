@@ -17,23 +17,42 @@ enum FacebookLoginParams: String {
 }
 
 
-//import UIKit
-//
-//class LoginFBRequest: NSObject {
-//
-//    func getUserInfo(accessToken: FBSDKAccessToken, completion: @escaping (_ :[String:Any]?, _ : Error?) -> Void) {
-//        let parameters = ["fields": "id, name, email, first_name, last_name, picture.type(large)"]
-//        GraphRequest(graphPath: "me", parameters: parameters, accessToken: accessToken, httpMethod: .GET, apiVersion: .defaultVersion).start{ httpResponse, graphResult in
-//
-//            switch graphResult {
-//            case .failed(let error):
-//                completion(nil, error)
-//            case .success(let graphResponse):
-//                completion(graphResponse.dictionaryValue, nil)
-//            }
-//        }
-//    }
-//}
+import UIKit
+
+struct LoginFBRequest {
+
+    func getFBUserData(){
+        if((FBSDKAccessToken.current()) != nil){
+
+            FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "name, first_name, last_name, picture.type(large), email"]).start(completionHandler: { (connection, result, error) -> Void in
+                if (error == nil){
+                    //everything works print the user data
+                    print(result)
+                } else {
+                    print(error)
+                }
+            })
+        }
+    }
+
+    internal func requestFBLogin(view: UIViewController, completionHandler: @escaping (RequestResult<Any, String>) -> Void) {
+        let fbLoginManager : FBSDKLoginManager = FBSDKLoginManager()
+        fbLoginManager.logIn(withReadPermissions: [ "email"], from: view) { (result, error) -> Void in
+            if (error == nil){
+                let fbloginresult : FBSDKLoginManagerLoginResult = result!
+                // if user cancel the login
+                if (result?.isCancelled)!{
+                    completionHandler(RequestResult.failure("Was cancelled"))
+                } else if fbloginresult.grantedPermissions.contains("email") {
+                    completionHandler(RequestResult.success(true))
+                }
+            } else {
+                completionHandler(RequestResult.failure(error.debugDescription))
+
+            }
+        }
+    }
+}
 
 
 
