@@ -12,6 +12,7 @@ enum FacebookParameters: String {
     case FACEBOOKID = "facebookID"
     case FACENAME = "name"
 }
+
 struct RegisterUserService: BaseService {
     internal func registerUser(facebookID: String,
                                name: String,

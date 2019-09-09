@@ -3,18 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		75760AC7FBD98455310639CF /* Pods_FriendTrip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48C6309D647789E66B2DB949 /* Pods_FriendTrip.framework */; };
+		96BE4D2A77FADB515FF04BC0 /* Pods_FriendTripTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 610992F836405DED589A91A3 /* Pods_FriendTripTests.framework */; };
 		BE1A13E821B602B80005A0FD /* UserEntity+CoreDataProperties copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1A13E621B602B80005A0FD /* UserEntity+CoreDataProperties copy.swift */; };
 		BE1A13E921B602B80005A0FD /* UserEntity+CoreDataClass copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1A13E721B602B80005A0FD /* UserEntity+CoreDataClass copy.swift */; };
 		BE1A13EC21B603BC0005A0FD /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1A13EB21B603BC0005A0FD /* PersistenceManager.swift */; };
 		BE1A13EF21B614F10005A0FD /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1A13EE21B614F10005A0FD /* UserDefaultManager.swift */; };
 		BE57509321B8AEEE0070A3A8 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57509221B8AEEE0070A3A8 /* KeychainService.swift */; };
 		BE5C847821A79DD6001610DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5C847721A79DD6001610DC /* AppDelegate.swift */; };
-		BE5C847A21A79DD6001610DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5C847921A79DD6001610DC /* ViewController.swift */; };
 		BE5C847D21A79DD6001610DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE5C847B21A79DD6001610DC /* Main.storyboard */; };
 		BE5C848021A79DD6001610DC /* FriendTrip.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE5C847E21A79DD6001610DC /* FriendTrip.xcdatamodeld */; };
 		BE5C848221A79DD8001610DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE5C848121A79DD8001610DC /* Assets.xcassets */; };
@@ -30,10 +30,36 @@
 		BECEF1A621B4A9C700319B5F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECEF1A521B4A9C700319B5F /* LoginViewController.swift */; };
 		BECEF1A921B4B16C00319B5F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECEF1A821B4B16C00319B5F /* LoginViewModel.swift */; };
 		BECEF1AB21B4B89A00319B5F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECEF1AA21B4B89A00319B5F /* User.swift */; };
+		ED470BEE22DD65A000FBA331 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED470BED22DD65A000FBA331 /* HomeViewController.swift */; };
+		ED470BF022DD6EB900FBA331 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED470BEF22DD6EB900FBA331 /* GoogleService-Info.plist */; };
+		ED470BF322E0038C00FBA331 /* TripDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED470BF222E0038C00FBA331 /* TripDatabase.swift */; };
+		ED470BF622E0066500FBA331 /* Dictionary+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED470BF522E0066500FBA331 /* Dictionary+Codable.swift */; };
+		ED4C2D8723209834007488F1 /* NewTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4C2D8623209834007488F1 /* NewTripViewController.swift */; };
+		ED825D5722F71D8A002419D6 /* FirebaseUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED825D5622F71D8A002419D6 /* FirebaseUserService.swift */; };
+		ED825D5F22F72287002419D6 /* FriendTripTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED825D5E22F72287002419D6 /* FriendTripTests.swift */; };
+		ED825D6822F723BE002419D6 /* UserServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED825D6722F723BE002419D6 /* UserServiceTest.swift */; };
+		ED9003D023064FF7003D5130 /* FirebaseDatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9003CF23064FF7003D5130 /* FirebaseDatabaseService.swift */; };
+		EDA60A3E231E0D6000654160 /* TripViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA60A3D231E0D6000654160 /* TripViewModel.swift */; };
+		EDCC6D3B23244C960071AEF2 /* CustomTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDCC6D3A23244C960071AEF2 /* CustomTextField.xib */; };
+		EDCC6D3D23244EE20071AEF2 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCC6D3C23244EE20071AEF2 /* CustomTextField.swift */; };
+		EDF76D6D2324A08B0074B070 /* Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF76D6C2324A08B0074B070 /* Custom.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		ED825D6122F72287002419D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE5C846C21A79DD6001610DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE5C847321A79DD6001610DC;
+			remoteInfo = FriendTrip;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		3E1DAE6FC02E68F063198088 /* Pods-FriendTripTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FriendTripTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FriendTripTests/Pods-FriendTripTests.debug.xcconfig"; sourceTree = "<group>"; };
 		48C6309D647789E66B2DB949 /* Pods_FriendTrip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FriendTrip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		610992F836405DED589A91A3 /* Pods_FriendTripTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FriendTripTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7451FF9063673953363DAD15 /* Pods-FriendTripTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FriendTripTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FriendTripTests/Pods-FriendTripTests.release.xcconfig"; sourceTree = "<group>"; };
 		9D06AB18EFD51049516C139E /* Pods-FriendTrip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FriendTrip.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FriendTrip/Pods-FriendTrip.debug.xcconfig"; sourceTree = "<group>"; };
 		BE1A13E621B602B80005A0FD /* UserEntity+CoreDataProperties copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserEntity+CoreDataProperties copy.swift"; sourceTree = "<group>"; };
 		BE1A13E721B602B80005A0FD /* UserEntity+CoreDataClass copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserEntity+CoreDataClass copy.swift"; sourceTree = "<group>"; };
@@ -42,7 +68,6 @@
 		BE57509221B8AEEE0070A3A8 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
 		BE5C847421A79DD6001610DC /* FriendTrip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FriendTrip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE5C847721A79DD6001610DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BE5C847921A79DD6001610DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BE5C847C21A79DD6001610DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BE5C847F21A79DD6001610DC /* FriendTrip.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FriendTrip.xcdatamodel; sourceTree = "<group>"; };
 		BE5C848121A79DD8001610DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,6 +85,21 @@
 		BECEF1A821B4B16C00319B5F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		BECEF1AA21B4B89A00319B5F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C6E3CB57FE8E65FDA3BB29A4 /* Pods-FriendTrip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FriendTrip.release.xcconfig"; path = "Pods/Target Support Files/Pods-FriendTrip/Pods-FriendTrip.release.xcconfig"; sourceTree = "<group>"; };
+		ED470BED22DD65A000FBA331 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		ED470BEF22DD6EB900FBA331 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ED470BF222E0038C00FBA331 /* TripDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDatabase.swift; sourceTree = "<group>"; };
+		ED470BF522E0066500FBA331 /* Dictionary+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Codable.swift"; sourceTree = "<group>"; };
+		ED4C2D8623209834007488F1 /* NewTripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTripViewController.swift; sourceTree = "<group>"; };
+		ED825D5622F71D8A002419D6 /* FirebaseUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUserService.swift; sourceTree = "<group>"; };
+		ED825D5C22F72287002419D6 /* FriendTripTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FriendTripTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED825D5E22F72287002419D6 /* FriendTripTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTripTests.swift; sourceTree = "<group>"; };
+		ED825D6022F72287002419D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED825D6722F723BE002419D6 /* UserServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServiceTest.swift; sourceTree = "<group>"; };
+		ED9003CF23064FF7003D5130 /* FirebaseDatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseDatabaseService.swift; sourceTree = "<group>"; };
+		EDA60A3D231E0D6000654160 /* TripViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripViewModel.swift; sourceTree = "<group>"; };
+		EDCC6D3A23244C960071AEF2 /* CustomTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTextField.xib; sourceTree = "<group>"; };
+		EDCC6D3C23244EE20071AEF2 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		EDF76D6C2324A08B0074B070 /* Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Custom.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +111,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ED825D5922F72287002419D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96BE4D2A77FADB515FF04BC0 /* Pods_FriendTripTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -79,6 +127,8 @@
 			children = (
 				9D06AB18EFD51049516C139E /* Pods-FriendTrip.debug.xcconfig */,
 				C6E3CB57FE8E65FDA3BB29A4 /* Pods-FriendTrip.release.xcconfig */,
+				3E1DAE6FC02E68F063198088 /* Pods-FriendTripTests.debug.xcconfig */,
+				7451FF9063673953363DAD15 /* Pods-FriendTripTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -115,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				BE5C847621A79DD6001610DC /* FriendTrip */,
+				ED825D5D22F72287002419D6 /* FriendTripTests */,
 				BE5C847521A79DD6001610DC /* Products */,
 				283460F1AC506E5BAFBE8B38 /* Pods */,
 				E9120468542C3349318301A8 /* Frameworks */,
@@ -125,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				BE5C847421A79DD6001610DC /* FriendTrip.app */,
+				ED825D5C22F72287002419D6 /* FriendTripTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,16 +184,19 @@
 		BE5C847621A79DD6001610DC /* FriendTrip */ = {
 			isa = PBXGroup;
 			children = (
-				BE1A13ED21B610480005A0FD /* Login */,
-				BE5C849C21AA056D001610DC /* Model */,
+				EDB8847C23136B3300CDD8FB /* Module */,
+				BE5C849C21AA056D001610DC /* Models */,
 				BE5C848C21A79ED5001610DC /* Service */,
 				BE5C847721A79DD6001610DC /* AppDelegate.swift */,
-				BE5C847921A79DD6001610DC /* ViewController.swift */,
 				BE5C847B21A79DD6001610DC /* Main.storyboard */,
 				BE5C848121A79DD8001610DC /* Assets.xcassets */,
 				BE5C848321A79DD8001610DC /* LaunchScreen.storyboard */,
 				BE5C848621A79DD8001610DC /* Info.plist */,
+				ED470BEF22DD6EB900FBA331 /* GoogleService-Info.plist */,
 				BE5C847E21A79DD6001610DC /* FriendTrip.xcdatamodeld */,
+				EDCC6D3A23244C960071AEF2 /* CustomTextField.xib */,
+				EDCC6D3C23244EE20071AEF2 /* CustomTextField.swift */,
+				EDF76D6C2324A08B0074B070 /* Custom.swift */,
 			);
 			path = FriendTrip;
 			sourceTree = "<group>";
@@ -149,6 +204,7 @@
 		BE5C848C21A79ED5001610DC /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				ED470BF122E0037600FBA331 /* Firebase */,
 				BE1A13EA21B6037F0005A0FD /* Database */,
 				BECEF1A121B49F1D00319B5F /* FacebookService */,
 				BE5C849921AA04BC001610DC /* TripService */,
@@ -164,6 +220,7 @@
 		BE5C848D21A79F33001610DC /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				ED470BF422E0063D00FBA331 /* Extensions */,
 				BE5C848E21A79F4C001610DC /* RequestData.swift */,
 				BE5C849421A79F8C001610DC /* RequestResult.swift */,
 			);
@@ -186,13 +243,13 @@
 			path = TripService;
 			sourceTree = "<group>";
 		};
-		BE5C849C21AA056D001610DC /* Model */ = {
+		BE5C849C21AA056D001610DC /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				BE5C849D21AA0593001610DC /* Trip.swift */,
 				BECEF1AA21B4B89A00319B5F /* User.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		BECEF1A121B49F1D00319B5F /* FacebookService */ = {
@@ -215,8 +272,88 @@
 			isa = PBXGroup;
 			children = (
 				48C6309D647789E66B2DB949 /* Pods_FriendTrip.framework */,
+				610992F836405DED589A91A3 /* Pods_FriendTripTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED470BEC22DD652100FBA331 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EDA60A3C231E0D2D00654160 /* ViewModel */,
+				EDA60A3B231E0D2100654160 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		ED470BF122E0037600FBA331 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				ED470BF222E0038C00FBA331 /* TripDatabase.swift */,
+				ED825D5622F71D8A002419D6 /* FirebaseUserService.swift */,
+				ED9003CF23064FF7003D5130 /* FirebaseDatabaseService.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		ED470BF422E0063D00FBA331 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ED470BF522E0066500FBA331 /* Dictionary+Codable.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ED7A2C6C2323288A003597C9 /* Trip */ = {
+			isa = PBXGroup;
+			children = (
+				ED4C2D8623209834007488F1 /* NewTripViewController.swift */,
+			);
+			path = Trip;
+			sourceTree = "<group>";
+		};
+		ED825D5D22F72287002419D6 /* FriendTripTests */ = {
+			isa = PBXGroup;
+			children = (
+				ED825D6622F7229A002419D6 /* Service */,
+				ED825D5E22F72287002419D6 /* FriendTripTests.swift */,
+				ED825D6022F72287002419D6 /* Info.plist */,
+			);
+			path = FriendTripTests;
+			sourceTree = "<group>";
+		};
+		ED825D6622F7229A002419D6 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				ED825D6722F723BE002419D6 /* UserServiceTest.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		EDA60A3B231E0D2100654160 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ED470BED22DD65A000FBA331 /* HomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EDA60A3C231E0D2D00654160 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EDA60A3D231E0D6000654160 /* TripViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EDB8847C23136B3300CDD8FB /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				ED7A2C6C2323288A003597C9 /* Trip */,
+				BE1A13ED21B610480005A0FD /* Login */,
+				ED470BEC22DD652100FBA331 /* Home */,
+			);
+			path = Module;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,18 +378,42 @@
 			productReference = BE5C847421A79DD6001610DC /* FriendTrip.app */;
 			productType = "com.apple.product-type.application";
 		};
+		ED825D5B22F72287002419D6 /* FriendTripTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED825D6322F72287002419D6 /* Build configuration list for PBXNativeTarget "FriendTripTests" */;
+			buildPhases = (
+				94C9C8F70C92EC1AD28DE6F5 /* [CP] Check Pods Manifest.lock */,
+				ED825D5822F72287002419D6 /* Sources */,
+				ED825D5922F72287002419D6 /* Frameworks */,
+				ED825D5A22F72287002419D6 /* Resources */,
+				C4557125693FB0880802948C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED825D6222F72287002419D6 /* PBXTargetDependency */,
+			);
+			name = FriendTripTests;
+			productName = FriendTripTests;
+			productReference = ED825D5C22F72287002419D6 /* FriendTripTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		BE5C846C21A79DD6001610DC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = LFSantos;
 				TargetAttributes = {
 					BE5C847321A79DD6001610DC = {
 						CreatedOnToolsVersion = 10.1;
+					};
+					ED825D5B22F72287002419D6 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = BE5C847321A79DD6001610DC;
 					};
 				};
 			};
@@ -270,6 +431,7 @@
 			projectRoot = "";
 			targets = (
 				BE5C847321A79DD6001610DC /* FriendTrip */,
+				ED825D5B22F72287002419D6 /* FriendTripTests */,
 			);
 		};
 /* End PBXProject section */
@@ -279,15 +441,63 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDCC6D3B23244C960071AEF2 /* CustomTextField.xib in Resources */,
 				BE5C848521A79DD8001610DC /* LaunchScreen.storyboard in Resources */,
+				ED470BF022DD6EB900FBA331 /* GoogleService-Info.plist in Resources */,
 				BE5C848221A79DD8001610DC /* Assets.xcassets in Resources */,
 				BE5C847D21A79DD6001610DC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED825D5A22F72287002419D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		94C9C8F70C92EC1AD28DE6F5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FriendTripTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4557125693FB0880802948C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FriendTripTests/Pods-FriendTripTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FriendTripTests/Pods-FriendTripTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FriendTripTests/Pods-FriendTripTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C659BF580E59E89B2A79F094 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -311,23 +521,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-FriendTrip/Pods-FriendTrip-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FriendTrip/Pods-FriendTrip-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FriendTrip/Pods-FriendTrip-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FriendTrip/Pods-FriendTrip-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FriendTrip/Pods-FriendTrip-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -337,29 +540,54 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDCC6D3D23244EE20071AEF2 /* CustomTextField.swift in Sources */,
 				BECEF1A621B4A9C700319B5F /* LoginViewController.swift in Sources */,
 				BE1A13E921B602B80005A0FD /* UserEntity+CoreDataClass copy.swift in Sources */,
+				ED825D5722F71D8A002419D6 /* FirebaseUserService.swift in Sources */,
 				BE5C849E21AA0593001610DC /* Trip.swift in Sources */,
-				BE5C847A21A79DD6001610DC /* ViewController.swift in Sources */,
 				BE5C849821A7A286001610DC /* RegisterUserService.swift in Sources */,
+				ED470BF322E0038C00FBA331 /* TripDatabase.swift in Sources */,
 				BE5C847821A79DD6001610DC /* AppDelegate.swift in Sources */,
 				BE1A13EF21B614F10005A0FD /* UserDefaultManager.swift in Sources */,
+				ED470BF622E0066500FBA331 /* Dictionary+Codable.swift in Sources */,
 				BE5C849521A79F8C001610DC /* RequestResult.swift in Sources */,
 				BECEF1AB21B4B89A00319B5F /* User.swift in Sources */,
 				BE5C848021A79DD6001610DC /* FriendTrip.xcdatamodeld in Sources */,
 				BECEF1A321B49F4800319B5F /* FBLoginService.swift in Sources */,
 				BECEF1A921B4B16C00319B5F /* LoginViewModel.swift in Sources */,
+				ED4C2D8723209834007488F1 /* NewTripViewController.swift in Sources */,
+				ED9003D023064FF7003D5130 /* FirebaseDatabaseService.swift in Sources */,
 				BE5C849B21AA04D5001610DC /* TripService.swift in Sources */,
+				ED470BEE22DD65A000FBA331 /* HomeViewController.swift in Sources */,
 				BE5C849321A79F6D001610DC /* FriendTripAPI.swift in Sources */,
 				BE57509321B8AEEE0070A3A8 /* KeychainService.swift in Sources */,
+				EDA60A3E231E0D6000654160 /* TripViewModel.swift in Sources */,
 				BE1A13EC21B603BC0005A0FD /* PersistenceManager.swift in Sources */,
+				EDF76D6D2324A08B0074B070 /* Custom.swift in Sources */,
 				BE1A13E821B602B80005A0FD /* UserEntity+CoreDataProperties copy.swift in Sources */,
 				BE5C849121A79F5A001610DC /* BaseService.swift in Sources */,
 				BE5C848F21A79F4C001610DC /* RequestData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ED825D5822F72287002419D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED825D6822F723BE002419D6 /* UserServiceTest.swift in Sources */,
+				ED825D5F22F72287002419D6 /* FriendTripTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ED825D6222F72287002419D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE5C847321A79DD6001610DC /* FriendTrip */;
+			targetProxy = ED825D6122F72287002419D6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BE5C847B21A79DD6001610DC /* Main.storyboard */ = {
@@ -511,7 +739,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.lf.FriendTrip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -530,8 +758,52 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.lf.FriendTrip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ED825D6422F72287002419D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E1DAE6FC02E68F063198088 /* Pods-FriendTripTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JQ52M4QL3U;
+				INFOPLIST_FILE = FriendTripTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lfsantos.FriendTripTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FriendTrip.app/FriendTrip";
+			};
+			name = Debug;
+		};
+		ED825D6522F72287002419D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7451FF9063673953363DAD15 /* Pods-FriendTripTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JQ52M4QL3U;
+				INFOPLIST_FILE = FriendTripTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lfsantos.FriendTripTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FriendTrip.app/FriendTrip";
 			};
 			name = Release;
 		};
@@ -552,6 +824,15 @@
 			buildConfigurations = (
 				BE5C848A21A79DD8001610DC /* Debug */,
 				BE5C848B21A79DD8001610DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED825D6322F72287002419D6 /* Build configuration list for PBXNativeTarget "FriendTripTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED825D6422F72287002419D6 /* Debug */,
+				ED825D6522F72287002419D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -16,24 +16,26 @@ enum FacebookLoginParams: String {
     case USER_PHOTO     = "user_photos"
 }
 
+protocol LoginFBRequestProtocol {
+    func getUserInfo(accessToken: AccessToken, completion: @escaping (_ :[String:Any]?, _ : Error?) -> Void)
+}
 
-//import UIKit
-//
-//class LoginFBRequest: NSObject {
-//
-//    func getUserInfo(accessToken: FBSDKAccessToken, completion: @escaping (_ :[String:Any]?, _ : Error?) -> Void) {
-//        let parameters = ["fields": "id, name, email, first_name, last_name, picture.type(large)"]
-//        GraphRequest(graphPath: "me", parameters: parameters, accessToken: accessToken, httpMethod: .GET, apiVersion: .defaultVersion).start{ httpResponse, graphResult in
-//
-//            switch graphResult {
-//            case .failed(let error):
-//                completion(nil, error)
-//            case .success(let graphResponse):
-//                completion(graphResponse.dictionaryValue, nil)
-//            }
-//        }
-//    }
-//}
+class LoginFBRequest: LoginFBRequestProtocol {
+
+    func getUserInfo(accessToken: AccessToken, completion: @escaping (_ :[String:Any]?, _ : Error?) -> Void) {
+        let parameters = ["fields": "id, name, email, first_name, last_name, picture.type(large)"]
+        GraphRequest(graphPath: "me", parameters: parameters, httpMethod: .post).start { (connection, value, error) in
+
+            if let error = error {
+                completion(nil, error)
+            }
+            
+            let data = value as? [String: Any]
+            
+            completion(data, nil)
+        }
+    }
+}
 
 
 

@@ -9,46 +9,20 @@
 import Foundation
 
 class UserDefaultManager {
-    private init(){ }
 
-    internal let defaultManager = UserDefaults.standard
-    static let shared = UserDefaultManager()
+    private let defaultManager = UserDefaults.standard
+    
+    init(){ }
 
-    internal func loadUserDefault(for key: String, completion: @escaping (RequestResult<Any?, String>) -> Void) {
-        if let object = defaultManager.object(forKey: key) as? Data {
-            let obj = try? NSKeyedUnarchiver.unarchivedObject(ofClass: NSDictionary.self, from: object)
-                //.unarchiveObject(with: object)
-            completion(RequestResult.success(obj))
-        } else {
-            completion(RequestResult.failure("error to load user defaults."))
-            print("error to load user defaults.")
-        }
+    func loadFromUserDefault(key: String) -> Any? {
+        return defaultManager.object(forKey: key)
     }
 
-    internal func loadFromUserDefault(key: String) -> Any? {
-        if let object = defaultManager.object(forKey: key) as? Data {
-            let obj = NSKeyedUnarchiver.unarchiveObject(with: object)
-            return obj
-        }
-        return nil
-    }
-
-    internal func deleteToUserDefault(key: String) {
+    func deleteToUserDefault(key: String) {
         self.defaultManager.removeObject(forKey: key)
     }
 
-    internal func saveUserDefault(_ obj: Any?, for key: String) {
-        if obj != nil {
-            let dataObj = NSKeyedArchiver.archivedData(withRootObject: obj!)
-            self.defaultManager.set(dataObj, forKey: key)
-        } else {
-            self.defaultManager.set(nil, forKey: key)
-        }
-        //  Save to disk
-        let didSave = self.defaultManager.synchronize()
-        if !didSave {
-            print("couldn't save")
-        }
+    func saveUserDefault(_ obj: Any, for key: String) {
+        self.defaultManager.set(obj, forKey: key)
     }
-
 }
